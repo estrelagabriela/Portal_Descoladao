@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Facebook, Instagram, Twitter, Mail } from 'lucide-react'
+import { Instagram, Mail } from 'lucide-react'
 import { Separator } from './ui/separator'
 
 export default function Footer() {
@@ -72,25 +72,13 @@ export default function Footer() {
             <h3 className="text-sm font-semibold">Redes Sociais</h3>
             <div className="flex space-x-4">
               <a
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
+                href="https://www.instagram.com/clubedescoladao/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
               </a>
               <a
                 href="mailto:suporteclubedescoladao@gmail.com"

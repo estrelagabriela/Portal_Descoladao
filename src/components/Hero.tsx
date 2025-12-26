@@ -1,4 +1,5 @@
 import { Button } from './ui/button'
+import { QRCodeSVG } from 'qrcode.react'
 
 export default function Hero() {
   return (
@@ -44,11 +45,14 @@ export default function Hero() {
                 alt="Cartão Clube Descoladão"
                 className="w-full h-auto rounded-3xl shadow-2xl"
               />
-              {/* Overlay para substituir o nome */}
-              <div className="absolute bottom-[18%] left-[10%] right-[35%]">
-                <div className="bg-[rgb(88,45,150)] px-2 py-1 rounded">
-                  <p className="text-white text-sm md:text-base font-bold tracking-wide">NOME DO CLIENTE</p>
-                </div>
+              {/* QR Code Overlay */}
+              <div className="absolute top-[33%] left-1/2 transform -translate-x-1/2 bg-white p-1 rounded shadow-md">
+                <QRCodeSVG
+                  value="https://play.google.com/store/apps/details?id=com.idevilson.descoladao"
+                  size={80}
+                  level="H"
+                  includeMargin={false}
+                />
               </div>
             </div>
           </div>
